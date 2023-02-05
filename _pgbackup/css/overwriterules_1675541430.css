@@ -1,0 +1,450 @@
+/* ===============================================================================
+OVERWRITE SETTINGS [ Use this stylesheet for overwriting Reginalds default stuff ]
+================================================================================== */
+/* DOCUMENT INFORMATION
+	- Document:    Reginald's Overwrite CSS
+	- Version:     1.01 beta
+	- Date:        December 2018
+	- Author:      Kimmich DigitalMedia */
+/* Alternative FONT strategy for your Project do here
+--------------------------------------------------------------------------- */
+We are trying to self-host our default FONT Roboto Condensed - so we load it first
+For more info - and different FONTs: https://google-webfonts-helper.herokuapp.com/fonts
+------------------------------------------------------------------------------------------------ */
+
+/* roboto-condensed-300 - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../FONTs/roboto-condensed-v18-latin-300.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+       url('../FONTs/roboto-condensed-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-300.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
+/* roboto-condensed-regular - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../FONTs/roboto-condensed-v18-latin-regular.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+       url('../FONTs/roboto-condensed-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-regular.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
+/* roboto-condensed-700 - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../FONTs/roboto-condensed-v18-latin-700.eot');
+
+    /* IE9 Compat Modes */
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+       url('../FONTs/roboto-condensed-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../FONTs/roboto-condensed-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../FONTs/roboto-condensed-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../FONTs/roboto-condensed-v18-latin-700.svg#RobotoCondensed') format('svg');
+
+    /* Legacy iOS */
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* Uncomment/Adjust the following lines for having a light theme nav on mobile
+   --------------------------------------------------------------------------- */
+/* .mean-container .mean-bar {
+    background: #ffffff;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.18), 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mean-container a.meanmenu-reveal {
+    color: #263238;
+}
+
+.mean-container a.meanmenu-reveal span {
+    background: #263238;
+}
+
+.mean-container .mean-nav {
+    background: #ffffff;
+}
+
+.mean-container .mean-nav ul li a {
+    color: #263238;
+    border-top: 1px solid #383838;
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.mean-container .mean-nav ul li li a {
+    border-top: 1px solid #000000;
+    border-top: 1px solid rgba(255,255,255,1);
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.mean-container .mean-nav ul li a:hover {
+    background: #252525;
+    background: rgba(0,0,0,0.05);
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+    background: rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.4) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.15) !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: #eceff1;
+} */
+/* -------------------------------- 
+   End of light theme nav on mobile */
+/* Uncomment/Adjust the following lines for having a Brand in Menubar that shrinks 
+   --------------------------------------------------------------------------- */
+.tmg__nav--if-width {
+    display: flex !important;
+}
+
+.magicnav--light,
+.magicnav--dark {
+    display: flex;
+}
+
+.magicnav--light ul li a,
+.magicnav--dark ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magicnav--light ul li,
+.magicnav--dark ul li {
+    display: inline-flex;
+}
+
+.magicnav--light ul li a,
+.magicnav--dark ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacer-poster-top {
+    padding-top: 20px;
+}
+
+#brand--target_navigation {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.company--brand_mobile {
+    width: 100px;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    background-image: url('../img/logo/tmck-logo-web.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000000;
+}
+
+@media (min-width:1100px) {
+    .spacer-poster-top {
+        padding-top: 148px;
+    }
+
+    .li-padding-remove {
+        padding: 15px 0px 15px 0px !important;
+        width: 100%;
+    }
+
+    .company--brand_desktop {
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 270px;
+        pointer-events: none;
+        background-image: url('../img/logo/tmck-logo-web.png');
+    }
+
+    .company--brand_mobile {
+        display: none !important;
+    }
+
+    .nav--shrink_height {
+        height: 62px;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+}
+
+/* --------------------------------------- 
+   End of Brand in Menubar that shrinks */
+/* Uncomment/Adjust the following lines for turning Slick Dots into bars 
+   --------------------------------------------------------------------- */
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 50px !important;
+    height: 6px !important;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 50px !important;
+    height: 6px !important;
+    padding: 9px !important;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px !important;
+    height: 6px !important;
+    content: '' !important;
+    text-align: center;
+    opacity: .25;
+    color: white !important;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+/* Some Padding on slider */
+.slick-slider {
+    padding-top: 0px;
+}
+
+@media (min-width:1100px) {
+    .slick-slider {
+        padding-top: 0px;
+    }
+}
+
+/* ------------------------ 
+   End of Slick Carousel */
+/* Uncomment/Adjust the following lines for controlling the Back-To-Top Appearance 
+   ------------------------------------------------------------------------------- */
+.back-to-top {
+    z-index: 9002 !important;
+}
+
+.back-to-top:hover {
+    background-color: #ff8f00 !important;
+    color: #fff;
+    opacity: 1;
+}
+
+/* --------------------- 
+   End of Back-To-Top */
+/* Uncomment/Adjust the following lines for changing the MagicTable stuff 
+   ------------------------------------------------------------------------------- */
+/* .tmg-table th,
+.tmg-table td:before {
+    color: #ce93d8;
+    margin-right: 10px;
+    content: attr(data-th) "";
+    width: 10rem;
+}
+
+@media (min-width: 56.25em) {
+    .tmg-table th:first-child,
+    .tmg-table td:first-child {
+        padding-left: 0;
+        width: 7rem;
+        text-align: center;
+    }
+} */
+/* --------------------- 
+   End of MagicTable */
+/* We need a reverse system */
+@media all and (min-width: 900px) {
+    .tmg--module__order-reverse {
+        order: 2;
+    }
+}
+
+/* Some list-styling */
+.tmg--list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tmg--list li {
+    margin-bottom: 10px;
+}
+
+/* Font-Awesome additionals */
+.tmg--fa-icon__circle span {
+    font-size: 48px;
+    font-size: 3.4375em;
+    line-height: 175px;
+}
+
+.tmg--fa-icon__circle {
+    display: block;
+    width: 175px;
+    min-height: 175px;
+    z-index: 0;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.text-longshadow {
+    text-shadow: 1px 1px rgba(194, 109, 0, 0.3) , 2px 2px rgba(200, 113, 0, 0.314) , 3px 3px rgba(206, 115, 0, 0.328) , 4px 4px rgba(210, 118, 0, 0.342) , 5px 5px rgba(214, 120, 0, 0.356) , 6px 6px rgba(218, 122, 0, 0.37) , 7px 7px rgba(221, 124, 0, 0.384) , 8px 8px rgba(223, 125, 0, 0.398) , 9px 9px rgba(226, 127, 0, 0.412) , 10px 10px rgba(228, 128, 0, 0.426) , 11px 11px rgba(230, 129, 0, 0.44) , 12px 12px rgba(232, 130, 0, 0.454) , 13px 13px rgba(233, 131, 0, 0.468) , 14px 14px rgba(235, 132, 0, 0.482) , 15px 15px rgba(236, 132, 0, 0.496) , 16px 16px rgba(237, 133, 0, 0.51) , 17px 17px rgba(238, 134, 0, 0.524) , 18px 18px rgba(239, 134, 0, 0.538) , 19px 19px rgba(240, 135, 0, 0.552) , 20px 20px rgba(241, 135, 0, 0.566) , 21px 21px rgba(242, 136, 0, 0.58) , 22px 22px rgba(243, 136, 0, 0.594) , 23px 23px rgba(244, 137, 0, 0.608) , 24px 24px rgba(245, 137, 0, 0.622) , 25px 25px rgba(245, 138, 0, 0.636) , 26px 26px rgba(246, 138, 0, 0.65) , 27px 27px rgba(246, 138, 0, 0.664) , 28px 28px rgba(247, 139, 0, 0.678) , 29px 29px rgba(248, 139, 0, 0.692) , 30px 30px rgba(248, 139, 0, 0.706) , 31px 31px rgba(249, 139, 0, 0.72) , 32px 32px rgba(249, 140, 0, 0.734) , 33px 33px rgba(249, 140, 0, 0.748) , 34px 34px rgba(250, 140, 0, 0.762) , 35px 35px rgba(250, 140, 0, 0.776) , 36px 36px rgba(251, 141, 0, 0.79) , 37px 37px rgba(251, 141, 0, 0.804) , 38px 38px rgba(251, 141, 0, 0.818) , 39px 39px rgba(252, 141, 0, 0.832) , 40px 40px rgba(252, 141, 0, 0.846) , 41px 41px rgba(252, 142, 0, 0.86) , 42px 42px rgba(253, 142, 0, 0.874) , 43px 43px rgba(253, 142, 0, 0.888) , 44px 44px rgba(253, 142, 0, 0.902) , 45px 45px rgba(254, 142, 0, 0.916) , 46px 46px rgba(254, 142, 0, 0.93) , 47px 47px rgba(254, 142, 0, 0.944) , 48px 48px rgba(254, 143, 0, 0.958) , 49px 49px rgba(255, 143, 0, 0.972) , 50px 50px rgba(255, 143, 0, 0.986);
+}
+
+#google-map {
+    height: 25vh;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+}
+
+[role=banner] {
+    margin: 0 auto 1em auto;
+    background: whitesmoke;
+    padding: 2em 0;
+    line-height: 1.5;
+}
+
+[role=banner] * {
+    line-height: 1.25 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+[role=banner] hgroup {
+    text-align: center;
+    margin: 0 auto 1em auto;
+    background: whitesmoke;
+    padding: 0;
+}
+
+[role=banner] h2 h3,
+[role=banner] h2 small {
+    display: inline !important;
+}
+
+main {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px -4px rgba(128, 128, 128, 0.25);
+}
+
+.form-element {
+    margin-bottom: 1.5rem !important;
+}
+
+.form-element label {
+    line-height: 1 !important;
+    font-size: small !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
+.form-element input {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+label,
+p {
+    font-weight: 700 !important;
+    font-size: small !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.5rem !important;
+    color: #777 !important;
+    text-transform: uppercase !important;
+}
+
+label span,
+p span {
+    font-weight: 700 !important;
+}
+

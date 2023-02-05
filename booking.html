@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>New page</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+      $(function() {
+        $("#arrivalDate, #departureDate").datepicker({
+          dateFormat: "dd-mm-yy",
+          minDate: 0
+        });
+      });
+    </script>
+        <style>
+      form {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        }
+  
+  label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: blue;
+  }
+</style>
+        <script>
+  function validateForm() {
+    var x = document.forms["bookingForm"]["name"].value;
+    if (x == "") {
+      alert("Name muss ausgefüllt werden");
+      return false;
+    }
+    var y = document.forms["bookingForm"]["email"].value;
+    if (y == "") {
+      alert("E-Mail-Adresse muss ausgefüllt werden");
+      return false;
+    }
+    var z = document.forms["bookingForm"]["roomType"].value;
+    if (z == "") {
+      alert("Zimmertyp muss ausgewählt werden");
+      return false;
+    }
+    var w = document.forms["bookingForm"]["arrivalDate"].value;
+    if (w == "") {
+      alert("Anreisedatum muss ausgewählt werden");
+      return false;
+    }
+    var v = document.forms["bookingForm"]["departureDate"].value;
+    if (v == "") {
+      alert("Abreisedatum muss ausgewählt werden");
+      return false;
+    }
+  }
+</script>
+    </head>
+    <body>
+        <form name="bookingForm" onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" name="name"/>
+            <label>E-Mail:</label>
+            <input type="email" name="email"/>
+            <label>Zimmertyp:</label>
+            <select name="roomType">
+                <option value="">Bitte wählen</option>
+                <option value="single">Einzelzimmer</option>
+                <option value="double">Doppelzimmer</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label>Anreisedatum:</label>
+            <input type="text" id="arrivalDate" name="arrivalDate"/>
+            <label>Abreisedatum:</label>
+            <input type="text" id="departureDate" name="departureDate"/>
+            <input type="submit" value="Buchung absenden"/>
+        </form>
+        <script>
+    function validateForm() {
+      var x = document.forms["bookingForm"]["name"].value;
+      if (x == "") {
+        alert("Name muss ausgefüllt werden");
+        return false;
+      }
+      var y = document.forms["bookingForm"]["email"].value;
+      if (y == "") {
+        alert("E-Mail-Adresse muss ausgefüllt werden");
+        return false;
+      }
+      var z = document.forms["bookingForm"]["roomType"].value;
+      if (z == "") {
+        alert("Zimmertyp muss ausgewählt werden");
+        return false;
+      }
+      var w = document.forms["bookingForm"]["arrivalDate"].value;
+      if (w == "") {
+        alert("Anreisedatum muss ausgewählt werden");
+        return false;
+      }
+      var v = document.forms["bookingForm"]["departureDate"].value;
+      if (v == "") {
+        alert("Abreisedatum muss ausgewählt werden");
+        return false;
+      }
+    }
+  </script>
+    </body>
+</html>
