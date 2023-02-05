@@ -13,47 +13,7 @@
         <title>Unser Hotel im Skiresort Großglockner!</title>
         <!-- Style Library -->         
         <link href="css/themagicstyles-min.css" rel="stylesheet"/>
-        <link href="css/overwriterules.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>         
-        <script>
-      $(function() {
-        $("#arrivalDate, #departureDate").datepicker({
-          dateFormat: "dd-mm-yy",
-          minDate: 0
-        });
-      });
-    </script>
-        <script>
-    function validateForm() {
-      var x = document.forms["bookingForm"]["name"].value;
-      if (x == "") {
-        alert("Name muss ausgefüllt werden");
-        return false;
-      }
-      var y = document.forms["bookingForm"]["email"].value;
-      if (y == "") {
-        alert("E-Mail-Adresse muss ausgefüllt werden");
-        return false;
-      }
-      var z = document.forms["bookingForm"]["roomType"].value;
-      if (z == "") {
-        alert("Zimmertyp muss ausgewählt werden");
-        return false;
-      }
-      var w = document.forms["bookingForm"]["arrivalDate"].value;
-      if (w == "") {
-        alert("Anreisedatum muss ausgewählt werden");
-        return false;
-      }
-      var v = document.forms["bookingForm"]["departureDate"].value;
-      if (v == "") {
-        alert("Abreisedatum muss ausgewählt werden");
-        return false;
-      }
-    }
-  </script>
+        <link href="css/overwriterules.css" rel="stylesheet"/> 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -76,40 +36,52 @@
                         <a class="sf-li" href="index.html">Zurück zur Homepage</a>
                     </li>
                     <li>
-                        <a data-scroll-nav="8" class="sf-li">Sitemap</a>
+                        <a data-scroll-nav="2" class="sf-li">Whirlpools</a>
+                    </li>
+                    <li><a data-scroll-nav="3" class="sf-li">Saunen</a>
+                    </li>
+                    <li>
+                        <a data-scroll-nav="4" class="sf-li">Massagen</a>
+                    </li>
+                    <li>
+                        <a data-scroll-nav="19" class="sf-li">Sitemap</a>
                     </li>
                 </ul>
             </nav>
             <div>
-                <img src="img/bilder/Hotel_Winter.jpg" alt="Buchen Hero"/>
+                <img src="img/bilder/Hotel_Winter.jpg"/>
             </div>
         </header>
         <main>
-            <section class="tmg--inner-tb-2 lighten-5 grey" data-pg-name="Impressum" title="Impressum">
-                <article class="tmg__area--width tmg--inner-2">
-</article>
-                <article class="tmg__area--width tmg--inner-2">
-                    <h1 style="font-size: 175%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Hotelzimmer buchen</h1>
-                    <section>
-                        <form name="bookingForm" onsubmit="return validateForm()">
-                            <label>Name:</label>
-                            <input type="text" name="name"/>
-                            <label>E-Mail:</label>
-                            <input type="email" name="email"/>
-                            <label>Zimmertyp:</label>
-                            <select name="roomType">
-                                <option value="">Bitte wählen</option>
-                                <option value="single">Einzelzimmer</option>
-                                <option value="double">Doppelzimmer</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                            <label>Anreisedatum:</label>
-                            <input type="text" id="arrivalDate" name="arrivalDate"/>
-                            <label>Abreisedatum:</label>
-                            <input type="text" id="departureDate" name="departureDate"/>
-                            <input type="submit" value="Buchung absenden"/>
-                        </form>
-                    </section>
+            <section class="lighten-5 grey" data-pg-name="Impressum" title="Impressum">
+                <article class="tmg__area">
+                    <div data-scroll-index="2" class="tmg__module--Flex tmg-two-900" data-pg-name="Whirlpools">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Whirlpool.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                        <article class="tmg--inner-4">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Whirlpools</h2>
+                            <p class="tmg--outer-b-1">Entspannen Sie sich in einem unserer vielen zimmereigenen Whirlpools und wärmen sie sich auf. Für das besondere etwas bieten wir unsere eigenen Kreationen an Duftölen an.&nbsp;</p>
+                        </article>
+                    </div>
+                    <div data-scroll-index="3" class="tmg__module--Flex tmg-two-900" data-pg-name="Saunen">
+                        <article class="tmg--inner-4">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Saunen</h2>
+                            <p class="tmg--outer-b-1">Unsere Saunen sind eine wahre Entspannung-Oase. Lassen sie sich in einer unserer 5 verschiedenen Saunen verwöhnen und kühlen sich anschließend in unserem Gletscherbad ab. In ihrer Suite wartet ein warmes Plätzchen am Kamin auf Sie.&nbsp;</p>
+                        </article>
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Sauna.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                    </div>
+                    <div data-scroll-index="4" class="tmg__module--Flex tmg-two-900" data-pg-name="Massagen">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Massage.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                        <article class="tmg--inner-4">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Massagen</h2>
+                            <p class="tmg--outer-b-1">Eine exklusive Behandlung von Körper und Geist bietet unser Massage-Team mit langjähriger Erfahrung.&nbsp;<br/>Von Sportmassage bis Eismassage bieten wir für jeden Gast das perfekte Programm.&nbsp;<br/><br/></p>
+                        </article>
+                    </div>
                 </article>
             </section>
         </main>
@@ -164,6 +136,7 @@
         </footer>
         <!-- TheMagicScript has jQuery included by default -->
         <!-- For init purposes -->
+        <script type="text/javascript" src="js/themagicscript-min.js"></script>
         <script>
             //Overwrite the default nav settings and set the screen width you want meanmenu to kick in at
             jQuery(document).ready(function () {

@@ -7,53 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60"/>
         <!-- Small SEO -->
-        <meta name="description" content="Ein Hotel als Ausgleich zum Wintersport und zur Entspannung"/>
-        <meta name="keywords" content="Hotel, Wellness, Sauna, Buchung, Massage"/>
+        <meta name="description" content="Der Hüttengasthof Schwarz ist offizieller Partner unseres Resort und seit Generationen in Familienhand geführt."/>
+        <meta name="keywords" content="Gasthof, Restaurant, Tradition"/>
         <meta name="author" content="Kenny Kimmich"/>
-        <title>Unser Hotel im Skiresort Großglockner!</title>
+        <title>Der Hüttengasthof Schwarz Großglockner!</title>
         <!-- Style Library -->         
         <link href="css/themagicstyles-min.css" rel="stylesheet"/>
         <link href="css/overwriterules.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>         
-        <script>
-      $(function() {
-        $("#arrivalDate, #departureDate").datepicker({
-          dateFormat: "dd-mm-yy",
-          minDate: 0
-        });
-      });
-    </script>
-        <script>
-    function validateForm() {
-      var x = document.forms["bookingForm"]["name"].value;
-      if (x == "") {
-        alert("Name muss ausgefüllt werden");
-        return false;
-      }
-      var y = document.forms["bookingForm"]["email"].value;
-      if (y == "") {
-        alert("E-Mail-Adresse muss ausgefüllt werden");
-        return false;
-      }
-      var z = document.forms["bookingForm"]["roomType"].value;
-      if (z == "") {
-        alert("Zimmertyp muss ausgewählt werden");
-        return false;
-      }
-      var w = document.forms["bookingForm"]["arrivalDate"].value;
-      if (w == "") {
-        alert("Anreisedatum muss ausgewählt werden");
-        return false;
-      }
-      var v = document.forms["bookingForm"]["departureDate"].value;
-      if (v == "") {
-        alert("Abreisedatum muss ausgewählt werden");
-        return false;
-      }
-    }
-  </script>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -72,45 +32,76 @@
         <header>
             <nav class="darken-1 indigo magicnav--dark tmg--fixed z-depth-1-half" aria-label="Page Menu">
                 <ul class="sf-menu tmg--Flex">
-                    <li>
-                        <a class="sf-li" href="index.html">Zurück zur Homepage</a>
+                    <li><a class="sf-li" href="index.html">Zurück zur Homepage</a>
                     </li>
                     <li>
-                        <a data-scroll-nav="8" class="sf-li">Sitemap</a>
+                        <a data-scroll-nav="2" class="sf-li">Signature Menü 1</a>
+                    </li>
+                    <li><a data-scroll-nav="3" class="sf-li">Signature Menü 2</a>
+                    </li>
+                    <li>
+                        <a data-scroll-nav="4" class="sf-li">Signature Menü 3</a>
+                    </li>
+                    <li><a data-scroll-nav="5" class="sf-li">Events</a>
+                    </li>
+                    <li><a data-scroll-nav="19" class="sf-li">Sitemap</a>
                     </li>
                 </ul>
             </nav>
             <div>
-                <img src="img/bilder/Hotel_Winter.jpg" alt="Buchen Hero"/>
+                <img src="img/bilder/Restaurant_Innen.jpg"/>
             </div>
         </header>
         <main>
-            <section class="tmg--inner-tb-2 lighten-5 grey" data-pg-name="Impressum" title="Impressum">
-                <article class="tmg__area--width tmg--inner-2">
-</article>
-                <article class="tmg__area--width tmg--inner-2">
-                    <h1 style="font-size: 175%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Hotelzimmer buchen</h1>
-                    <section>
-                        <form name="bookingForm" onsubmit="return validateForm()">
-                            <label>Name:</label>
-                            <input type="text" name="name"/>
-                            <label>E-Mail:</label>
-                            <input type="email" name="email"/>
-                            <label>Zimmertyp:</label>
-                            <select name="roomType">
-                                <option value="">Bitte wählen</option>
-                                <option value="single">Einzelzimmer</option>
-                                <option value="double">Doppelzimmer</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                            <label>Anreisedatum:</label>
-                            <input type="text" id="arrivalDate" name="arrivalDate"/>
-                            <label>Abreisedatum:</label>
-                            <input type="text" id="departureDate" name="departureDate"/>
-                            <input type="submit" value="Buchung absenden"/>
-                        </form>
-                    </section>
+            <section class="lighten-5 grey" data-pg-name="Verpflegung" title="Verpflegung">
+                <article class="tmg__area--width tmg--inner-2" data-pg-name="Hüttengasthof">
+                    <h1 style="font-size: 175%;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Hüttengasthof Schwarz Großglockner&nbsp;</h1>
+                    <p class="tmg--outer-b-1">Der Hüttengasthof Schwarz liegt im Herzen des Großglockner Resorts und serviert
+an jedem Tag traditionelle Speisen aus Österreich und der Umgebung. Kulinarisch
+werden sie hier mit allerlei Kreationen verwöhnt. Qualität liegt uns am Herzen,
+weshalb der Gasthof nur mit besten Zutaten aus der Region arbeitet.
+Unser Team aus Spitzenköchen und Wirten begrüßt sie gerne zu einem
+unvergesslichen Gala-Dinner am Abend, einer warmen Mahlzeit am Mittag, einem
+Snack oder zum reichhaltigen Hüttenfrühstück.</p>
                 </article>
+                <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Signature" data-scroll-index="2">
+                    <div data-scroll-index="2" class="tmg__module--Flex tmg-two-900" data-pg-name="Signature 1">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Schnitzel.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                        <article class="tmg--inner-2">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Signature Menü 1&nbsp;</h2>
+                            <p class="tmg--outer-b-1">Das Original-Wiener-Schnitzel- ein Klassiker!<br/>Mit einem g&rsquo;schmackigen Erdäpfelsalat ist diese Schnitzel-Variation ein Gedicht!<br/>Verfeinert mit besten Kräutern des Alpenlands und serviert mit Beilagen nach ihrer Wahl.&nbsp;<br/><br/></p>
+                        </article>
+                    </div>
+                    <div data-scroll-index="3" class="tmg__module--Flex tmg-two-900" data-pg-name="Signature 2">
+                        <article class="tmg--inner-2">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Signature Menü 2&nbsp;</h2>
+                            <p class="tmg--outer-b-1">Unser Kaiserschmarrn ist einfach herrlich und ein Genuss für jeden der auf Süßspeisen mit dem besonderen Kick steht. Verfeinert mit Mandeln und unseren hauseigenen Chutneys wird dieser Klassiker zur kulinarischen Neuentdeckung.<br/>Auf Wunsch auch als Apfelschmarrn zu bestellen.</p>
+                        </article>
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Kaiserschmarrn.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                    </div>
+                    <div data-scroll-index="4" class="tmg__module--Flex tmg-two-900" data-pg-name="Signature 3">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Schweinsbraten.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                        <article class="tmg--inner-2">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Signature Menü 3&nbsp;</h2>
+                            <p class="tmg--outer-b-1">Frisch serviert auf dem Holzbrett einer unsere Spezialitäten-<br/>Schweinsbraten mit Knödel und frischer Spitzpaprika. Hausmannskost auf Österreich.&nbsp;<br/><br/></p>
+                        </article>
+                    </div>
+                    <div data-scroll-index="5" class="tmg__module--Flex tmg-two-900" data-pg-name="Events">
+                        <article class="tmg--inner-2">
+                            <h2 class="amber-text text-darken-3 tmg--outer-b-1">Events</h2>
+                            <p class="tmg--outer-b-1">Galaabend mit Musik: 15.02.2023<br/><br/>Live Konzert mit Mike De Decker: 16.02.2023<br/></p>
+                        </article>
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/Events.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
         <footer data-scroll-index="19" data-pgc="Footer">
@@ -125,30 +116,35 @@
                         <div class="tmg--inner-1" data-pg-name="Sitemap">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Die Seiten, die zu unserem Webauftritt gehören:</p>
                             <ul>
-                                <li><a href="#">Home</a>
-                                </li>
-                                <li><a href="skipisten.html">Skipisten</a>
-                                </li>
-                                <li><a href="wanderpfade.html">Wanderpfade</a>
-                                </li>
-                                <li><a href="Tarife.html">Tarife</a>
+                                <li>
+                                    <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="verpflegung.html">Verpflegung</a>
+                                    <a href="skipisten.html">Skipisten</a>
                                 </li>
                                 <li>
-                                    <a href="unterkunft.html">Unterkunft</a>
+                                    <a href="wanderpfade.html">Wanderpfade</a>
                                 </li>
-                                <li><a href="buchen.html">Buchen</a>
+                                <li>
+                                    <a href="Tarife.html">Tarife</a>
+                                </li>
+                                <li><a href="verpflegung.html">Verpflegung</a>
+                                </li>
+                                <li><a href="unterkunft.html">Unterkunft</a>
+                                </li>
+                                <li>
+                                    <a href="buchen.html">Buchen</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="tmg--inner-1" data-pg-name="DVSGO">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Impressum/Datenschutz</p>
                             <ul>
-                                <li><a href="datenschutz.html">Datenschutz</a>
+                                <li>
+                                    <a href="datenschutz.html">Datenschutz</a>
                                 </li>
-                                <li><a href="impressum.html">Impressum</a>
+                                <li>
+                                    <a href="impressum.html">Impressum</a>
                                 </li>
                             </ul>
                         </div>
@@ -159,10 +155,10 @@
                 <section id="google-map" data-pg-name="Google Map">
 </section>
             </section>
-            <p class="light-blue lighten-2 text-lighten-4 tmg--inner-2 tmg__copyright white-text" data-pg-name="Copyright">© Kenny Kimmich - All rights reserved</p>
-            <a href="#" class="show back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
+            <p class="light-blue lighten-2 text-lighten-4 tmg--inner-2 tmg__copyright white-text" data-pg-name="Copyright">© Kenny Kimmich - All rights reserved</p><a href="#" class="show back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
         </footer>
         <!-- TheMagicScript has jQuery included by default -->
+        <script type="text/javascript" src="js/themagicscript-min.js"></script>
         <!-- For init purposes -->
         <script>
             //Overwrite the default nav settings and set the screen width you want meanmenu to kick in at

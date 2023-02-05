@@ -7,53 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60"/>
         <!-- Small SEO -->
-        <meta name="description" content="Ein Hotel als Ausgleich zum Wintersport und zur Entspannung"/>
-        <meta name="keywords" content="Hotel, Wellness, Sauna, Buchung, Massage"/>
+        <meta name="description" content="Unsere Wanderpfade umfassen eine Gesamtstrecke von über 60 Kilometern."/>
+        <meta name="keywords" content="Wandern, Klettern, Schneeschuhe, Langlaufski, Wanderung"/>
         <meta name="author" content="Kenny Kimmich"/>
-        <title>Unser Hotel im Skiresort Großglockner!</title>
+        <title>Unsere verschiedenen Wanderpfade für Langlauf, Schneeschuhe und Fuß.</title>
         <!-- Style Library -->         
         <link href="css/themagicstyles-min.css" rel="stylesheet"/>
         <link href="css/overwriterules.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>         
-        <script>
-      $(function() {
-        $("#arrivalDate, #departureDate").datepicker({
-          dateFormat: "dd-mm-yy",
-          minDate: 0
-        });
-      });
-    </script>
-        <script>
-    function validateForm() {
-      var x = document.forms["bookingForm"]["name"].value;
-      if (x == "") {
-        alert("Name muss ausgefüllt werden");
-        return false;
-      }
-      var y = document.forms["bookingForm"]["email"].value;
-      if (y == "") {
-        alert("E-Mail-Adresse muss ausgefüllt werden");
-        return false;
-      }
-      var z = document.forms["bookingForm"]["roomType"].value;
-      if (z == "") {
-        alert("Zimmertyp muss ausgewählt werden");
-        return false;
-      }
-      var w = document.forms["bookingForm"]["arrivalDate"].value;
-      if (w == "") {
-        alert("Anreisedatum muss ausgewählt werden");
-        return false;
-      }
-      var v = document.forms["bookingForm"]["departureDate"].value;
-      if (v == "") {
-        alert("Abreisedatum muss ausgewählt werden");
-        return false;
-      }
-    }
-  </script>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -72,45 +32,61 @@
         <header>
             <nav class="darken-1 indigo magicnav--dark tmg--fixed z-depth-1-half" aria-label="Page Menu">
                 <ul class="sf-menu tmg--Flex">
-                    <li>
-                        <a class="sf-li" href="index.html">Zurück zur Homepage</a>
+                    <li><a class="sf-li" href="index.html">Zurück zur Homepage</a>
                     </li>
-                    <li>
-                        <a data-scroll-nav="8" class="sf-li">Sitemap</a>
+                    <li><a data-scroll-nav="2" class="sf-li">Langlaufpfad</a>
+                    </li>
+                    <li><a data-scroll-nav="3" class="sf-li">Wanderpfad</a>
+                    </li>
+                    <li><a data-scroll-nav="19" class="sf-li">Sitemap</a>
                     </li>
                 </ul>
             </nav>
             <div>
-                <img src="img/bilder/Hotel_Winter.jpg" alt="Buchen Hero"/>
+                <img src="img/bilder/Wandern2.jpg"/>
             </div>
         </header>
         <main>
-            <section class="tmg--inner-tb-2 lighten-5 grey" data-pg-name="Impressum" title="Impressum">
+            <section class="lighten-5 grey" data-pg-name="Impressum" title="Impressum">
                 <article class="tmg__area--width tmg--inner-2">
-</article>
-                <article class="tmg__area--width tmg--inner-2">
-                    <h1 style="font-size: 175%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Hotelzimmer buchen</h1>
-                    <section>
-                        <form name="bookingForm" onsubmit="return validateForm()">
-                            <label>Name:</label>
-                            <input type="text" name="name"/>
-                            <label>E-Mail:</label>
-                            <input type="email" name="email"/>
-                            <label>Zimmertyp:</label>
-                            <select name="roomType">
-                                <option value="">Bitte wählen</option>
-                                <option value="single">Einzelzimmer</option>
-                                <option value="double">Doppelzimmer</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                            <label>Anreisedatum:</label>
-                            <input type="text" id="arrivalDate" name="arrivalDate"/>
-                            <label>Abreisedatum:</label>
-                            <input type="text" id="departureDate" name="departureDate"/>
-                            <input type="submit" value="Buchung absenden"/>
-                        </form>
-                    </section>
+                    <h1 style="font-size: 290%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Wanderpfade</h1>
+                    <p class="tmg--outer-b-1" style="text-align: center;">Unsere gepflegten Wanderpfade sind etwas für alle Freunde des Langlaufs und Wanderer.<br/>Mit einer Gesamtstrecke von 65km bieten wir verschiedenste Pfade mit unterschiedlichen
+Steigungen und besonderen Bodenbeschaffenheiten.</p>
                 </article>
+                <article data-scroll-index="2" class="tmg__area--width tmg--inner-2" data-pg-name="Langlaufpfad">
+                    <h1 style="font-size: 175%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Langlauf-Pfad</h1>
+                    <p class="tmg--outer-b-1">Der Langlauf Pfad erstreckt sich über 25km und bietet eine tolle Abwechslung zwischen
+sonnigen Lichtungen und atemberaubenden Wäldern. Mit unserem Schneemobil-Shuttle
+Service bestimmen sie die Länge ihres Pfades selbst und können sich an Checkpoints
+wieder ans Zentrum des Großglockner-Resort transportieren lassen.<br/>Alternativ wartet am Ende des Pfades die Schwarzenberghütte auf sie. Hier können sie
+neben zahlreichen Warmgetränken auch eine der köstlichen Hüttenpfannen probieren.</p>
+                </article>
+                <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Bild Langlauf" data-scroll-index="2">
+                    <div class="tmg__module--Flex tmg-two-900">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/rudy-issa-7s27WL5WFzE-unsplash.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                    </div>
+                </section>
+                <article data-scroll-index="3" class="tmg__area--width tmg--inner-2" data-pg-name="Wanderpfad">
+                    <h1 style="font-size: 175%; text-align: center;" class="tmg--outer-b-1 text-darken-3 amber-text" data-pg-name="Impressum">Wanderpfad</h1>
+                    <p class="tmg--outer-b-1">Unsere Fußpfade bestehen aus 10 verschiedenen Routen und führen an die schönsten
+Orte des Großglockners-Gebiets.
+Auf unseren gut ausgeschilderten Pfaden haben sie die Wahl zwischen perfekt gepflegten
+Wegen, Aufstiegspässen und Schneeschuhpfaden in tiefem Schneeterrain.
+Sie können sich außerdem Wandergruppen anschließen und haben einen unserer vielen
+erfahrenen Bergsteigern an ihrer Seite der sie über spannende Routen führt und
+Wissenswertes über die Natur weitergibt.
+In unseren Gruppenwanderungen bieten wir Tag-und Mondschein-Wanderungen an.
+Die Routen führen an zahlreichen Berghütten vorbei in denen sie sich stärken können.</p>
+                </article>
+                <section aria-label="" class="blue-grey lighten-5 tmg__area" data-pg-name="Bild Wanderpfad" data-scroll-index="2">
+                    <div class="tmg__module--Flex tmg-two-900">
+                        <article class="padding--destroy" style="display: flex; object-fit: fill;">
+                            <img src="img/bilder/aleksandr-ovchinnikov-Jd-qUfkjYZY-unsplash.jpg" style="object-fit: cover; object-position: top right;"/>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
         <footer data-scroll-index="19" data-pgc="Footer">
@@ -125,30 +101,35 @@
                         <div class="tmg--inner-1" data-pg-name="Sitemap">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Die Seiten, die zu unserem Webauftritt gehören:</p>
                             <ul>
-                                <li><a href="#">Home</a>
-                                </li>
-                                <li><a href="skipisten.html">Skipisten</a>
-                                </li>
-                                <li><a href="wanderpfade.html">Wanderpfade</a>
-                                </li>
-                                <li><a href="Tarife.html">Tarife</a>
+                                <li>
+                                    <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="verpflegung.html">Verpflegung</a>
+                                    <a href="skipisten.html">Skipisten</a>
                                 </li>
                                 <li>
-                                    <a href="unterkunft.html">Unterkunft</a>
+                                    <a href="wanderpfade.html">Wanderpfade</a>
                                 </li>
-                                <li><a href="buchen.html">Buchen</a>
+                                <li>
+                                    <a href="Tarife.html">Tarife</a>
+                                </li>
+                                <li><a href="verpflegung.html">Verpflegung</a>
+                                </li>
+                                <li><a href="unterkunft.html">Unterkunft</a>
+                                </li>
+                                <li>
+                                    <a href="buchen.html">Buchen</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="tmg--inner-1" data-pg-name="DVSGO">
                             <p class="blue-grey-text tmg--outer-b-1 text-lighten-1">Impressum/Datenschutz</p>
                             <ul>
-                                <li><a href="datenschutz.html">Datenschutz</a>
+                                <li>
+                                    <a href="datenschutz.html">Datenschutz</a>
                                 </li>
-                                <li><a href="impressum.html">Impressum</a>
+                                <li>
+                                    <a href="impressum.html">Impressum</a>
                                 </li>
                             </ul>
                         </div>
@@ -159,10 +140,10 @@
                 <section id="google-map" data-pg-name="Google Map">
 </section>
             </section>
-            <p class="light-blue lighten-2 text-lighten-4 tmg--inner-2 tmg__copyright white-text" data-pg-name="Copyright">© Kenny Kimmich - All rights reserved</p>
-            <a href="#" class="show back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
+            <p class="light-blue lighten-2 text-lighten-4 tmg--inner-2 tmg__copyright white-text" data-pg-name="Copyright">© Kenny Kimmich - All rights reserved</p><a href="#" class="show back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
         </footer>
         <!-- TheMagicScript has jQuery included by default -->
+        <script type="text/javascript" src="js/themagicscript-min.js"></script>
         <!-- For init purposes -->
         <script>
             //Overwrite the default nav settings and set the screen width you want meanmenu to kick in at
